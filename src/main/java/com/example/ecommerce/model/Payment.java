@@ -24,6 +24,7 @@ public class Payment {
     private String method; // Payment method (e.g., card, UPI, cash)
     private String status; // Payment status (e.g., success, failed, pending)
     private LocalDateTime createdDate; // Payment timestamp
+    private LocalDateTime createdBy;
 
     @Override
     public String toString() {

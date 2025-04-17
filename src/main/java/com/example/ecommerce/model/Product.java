@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,6 +23,8 @@ public class Product {
     private Double price;
     private String category;
     private Integer stock;
+    private LocalDateTime createdDate;  //when this product added
+    private LocalDateTime createdBy;    //who added this product
 //    private List<String> images;
 
 

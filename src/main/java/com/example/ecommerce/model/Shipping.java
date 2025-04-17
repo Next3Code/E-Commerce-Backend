@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -21,6 +23,8 @@ public class Shipping {
     private String address;
     private String status;
     private String trackingNumber;
+    private LocalDateTime createdDate;
+    private LocalDateTime createdBy;
 
     @Override
     public String toString() {
