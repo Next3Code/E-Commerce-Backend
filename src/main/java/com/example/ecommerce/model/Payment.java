@@ -23,8 +23,8 @@ public class Payment {
     private BigDecimal amount;
     private String method; // Payment method (e.g., card, UPI, cash)
     private String status; // Payment status (e.g., success, failed, pending)
-    private LocalDateTime createdDate; // Payment timestamp
-    private LocalDateTime createdBy;
+    private String createdDate; // Payment timestamp
+    private String createdBy;
 
     @Override
     public String toString() {

@@ -23,8 +23,8 @@ public class Product {
     private Double price;
     private String category;
     private Integer stock;
-    private LocalDateTime createdDate;  //when this product added
-    private LocalDateTime createdBy;    //who added this product
+    private String createdDate;  //when this product added
+    private String createdBy;    //who added this product
 //    private List<String> images;
 
 

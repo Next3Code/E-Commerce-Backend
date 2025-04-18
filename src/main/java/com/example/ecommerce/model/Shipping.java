@@ -19,21 +19,15 @@ public class Shipping {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long orderId;
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "order_id", nullable = false)
+    private Order order;
     private String address;
     private String status;
     private String trackingNumber;
-    private LocalDateTime createdDate;
-    private LocalDateTime createdBy;
+    private String createdDate;
+    private String createdBy;
 
-    @Override
-    public String toString() {
-        return "Shipping{" +
-                "id=" + id +
-                ", orderId=" + orderId +
-                ", address='" + address + '\'' +
-                ", status='" + status + '\'' +
-                ", trackingNumber='" + trackingNumber + '\'' +
-                '}';
-    }
+
 }
