@@ -3,4 +3,8 @@ target/
 *.class
 .idea/
 HELP.md
-
+.classpath
+.project
+.settings/
+bin/
+**/application.properties
