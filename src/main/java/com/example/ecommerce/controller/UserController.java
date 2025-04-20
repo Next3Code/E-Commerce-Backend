@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/users")
 public class UserController {
 
+	/**
+	 * This is temporary controller method to test the app.
+	 * @return
+	 */
     @GetMapping("/greet")
     public String greetMessage() {
         return "Hi, Good Morning!";
